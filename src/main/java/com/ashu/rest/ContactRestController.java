@@ -38,7 +38,7 @@ public class ContactRestController {
 
 	}
 
-	@PutMapping("editcontact/{contactId}")
+	@GetMapping("edit/{contactId}")
 	public ContactForm editContact(@PathVariable Integer contactId) {
 		ContactForm editContact = service.editContact(contactId);
 
@@ -55,4 +55,6 @@ public class ContactRestController {
 
 	}
 
+	
+	
 }
